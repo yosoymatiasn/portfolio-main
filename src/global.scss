@@ -1,0 +1,144 @@
+// VARIABLES
+$primary-color: rgb(29,121,197);
+$secondary-color: #9EA4AF;
+$off-white: rgb(255, 255, 255);
+$arg-blue: #5EC1E0;
+$arg-yellow: #FFDB5B;
+
+
+@media (max-width: 640px) {
+    .flex {
+        display: block;
+    }
+
+    .col-1 {
+        max-width: 100%;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: $off-white;
+    text-decoration: none;
+}
+
+
+.home-wrap {
+    display: flex;
+    min-height: 100vh;
+
+    @media (max-width: 775px) {
+        display: block;
+    } 
+}
+
+.home-sections {
+    flex: 1;
+
+    section {
+        padding: 50px 0;
+    }
+
+    // flex classes
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex--center {
+        justify-content: center;
+    }
+    .flex--around {
+        justify-content: space-around;
+    }
+
+    .order-first {
+        order: -1;
+    }
+}
+
+//   columns
+.col-1 {
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+.col-2 {
+    max-width: 620px;
+    margin: 0 10px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.push-right {
+    margin-left: 330px;
+}
+
+@media (max-width: 640px) {
+    .home-sections .flex {
+        display: block;
+    }
+
+    .col-1 {
+        max-width: 100%;
+    }
+
+    .col-50 {
+        width: auto;
+    }
+
+    .push-right {
+        margin-left: 10px;
+    }
+}
+
+// typography
+p, h1, h2 {
+    color: $primary-color;
+}
+
+.home-lead {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: .6rem;
+
+    &.outdented {
+        text-indent: -.65em;
+
+        @media (max-width: 640px) {
+            text-indent: unset;
+        }
+    }
+}
+
+.emphasis {
+    // color: $secondary-color;
+    font-weight: 600;
+}
+
+// buttons
+.home-cta {
+    display: block;
+    background-color: $arg-blue;
+    opacity: .92;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: .4em 0;
+    line-height: 1.25;
+    box-shadow: black 1px 1px 3px;
+}
+
+// icons
+.icon {
+    vertical-align: text-top;
+}
+
+.temp {
+    height: 2000px;
+}

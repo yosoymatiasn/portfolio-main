@@ -1,0 +1,45 @@
+@import '../../global.scss';
+
+section.about {
+    background-color: $arg-blue;
+    padding-bottom: 0;
+    margin-bottom: -50px;
+
+    h2, p {
+        color: $off-white;
+    }
+
+    .headshot {
+        margin-bottom: 0;
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 1.2rem;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 640px) {
+    section.about {
+        .headshot {
+        }
+
+        h2 {
+            margin-left: unset;
+        }
+
+        .title {
+            // background-color: white;
+            margin: 0;
+            padding: .4rem
+        }
+    }
+
+}

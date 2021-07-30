@@ -1,0 +1,55 @@
+@import '../../global.scss';
+
+section.clips {
+    background-color: $arg-yellow;
+    overflow-y: hidden;
+
+    .col-1 {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media (max-width: 640px) {
+            display: block;
+            width: unset;
+            height: 200px;
+            padding: 50px 20px;
+
+            &:last-child {
+                padding: 0px 20px 50px;
+            }
+        }
+    }
+
+    .home-cta {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon {
+            font-size: 3rem;
+        }
+    }
+
+    .photo-strip {
+        background: url(../../assets/img/photo-strip.png);
+        background-size: 60%;
+        background-repeat: repeat-y;
+        background-position: center 10px;
+        position: absolute;
+        top: 0;
+        margin: -50px 0;
+        width: 100%;
+        height: calc(100% + 100px);
+        filter: drop-shadow(black 2px 2px 1px);
+
+        @media (max-width: 640px) {
+            display: none;
+        }
+    }
+
+}
